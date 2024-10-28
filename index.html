@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section">
+        <h1>Chatbot Demo for CSS</h1>
+        <div class="container" id="chatArea">
+            <div class="container is-fullwidth box" id="chatWindow" style="overflow-y: scroll; max-height: 70vh; min-height: 70vh;">
+                <article class="message is-info message-item" style="width: fit-content;">
+                    <div class="message-header">
+                        <p>AI</p>
+                    </div>
+                    <div class="message-body">
+                        Hello, how can I help you?
+                    </div>
+                </article>
+                <article class="message is-success message-item" style="width: fit-content;">
+                    <div class="message-header">
+                        <p>User</p>
+                    </div>
+                    <div class="message-body">
+                        You can become a pineapple!
+                    </div>
+                </article>
+            </div>
+            <div class="field is-grouped">
+                <p class="control is-expanded">
+                    <input class="input" type="text" id="textInput" placeholder="Type something..." autocomplete="off">
+                </p>
+                <p class="control">
+                    <button class="button is-info" id="sendButton">Send</button>
+                    <button class="button is-danger" id="clearButton">Clear Chat</button>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
